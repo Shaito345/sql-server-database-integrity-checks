@@ -12,6 +12,7 @@ This repository is an educational reference for database administrators and deve
 - How to investigate possible storage and I/O problems
 - How to evaluate backups before considering repair
 - A checklist for validating a database after recovery
+- [Database integrity check SQL script](check-database-integrity.sql) — a diagnostic example using `DBCC CHECKDB`.
 
 ## 1. Check Database Integrity
 
