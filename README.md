@@ -31,6 +31,16 @@ Replace `YourDatabase` with the name of the database you intend to check.
 
 For syntax, options, and limitations, consult the official [Microsoft DBCC CHECKDB documentation](https://learn.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-checkdb-transact-sql).
 
+## How to Use the Script
+
+1. Open [`check-database-integrity.sql`](check-database-integrity.sql).
+2. Review the script before running it in SQL Server Management Studio (SSMS) or another compatible SQL Server query editor.
+3. Replace `YourDatabase` with the name of the database you want to check.
+4. Confirm that you have the required permissions and that the check is appropriate for your environment.
+5. Execute the script and review the complete output for reported consistency errors.
+
+**Note:** `DBCC CHECKDB` performs an integrity check; it does not repair the database. It can consume significant system resources, so consider the impact before running it against a production database.
+
 ## 2. Investigate Errors Before Repair
 
 If a consistency check reports errors:
